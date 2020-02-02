@@ -4,24 +4,24 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <title>----有意思----</title>
+    <description>技术发布</description>
+    <link>https://jzhoucdc.github.io/atom.xml</link>
+
     <author>
-      <name>{{ site.author.name }}</name>
-      <email>{{ site.author.email }}</email>
-      <uri>{{ site.author.url }}</uri>
+      <name>jzhoucdc</name>
+      <email>jzhoucdc@foxmail</email>
+      <uri>https://jzhoucdc.github.io</uri>
     </author>
-    {% for post in site.posts limit:10 %}
+     
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}/{{ post.url }}</link>
-        <link href="{{ site.url }}{{ post.url }}"/>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <title>text文章</title>
+        <description>测试</description>
+        
+        <link>https://jzhoucdc.github.io/Yet-Another-Sample-Page</link>
+      
+       
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
